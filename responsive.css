@@ -1,0 +1,52 @@
+@media screen and (max-width: 924px) {
+    #inicio,
+    #sobre,
+    #experiencia {
+        margin-top: 150px;
+        flex-direction: column;
+    }
+
+    #inicio h1 {
+        height: auto;
+        width: auto;
+    }
+
+    .absolute {
+        display: none;
+    }
+
+    #sobre {
+        align-items: center;
+        margin-left: 200px;
+    }
+
+    #sobre h2 {
+        margin-top: 150px;
+    }
+
+    .paragrafo {
+        width: 300px;
+        height: auto;
+    }
+
+    #sobre img {
+        margin-right: 200px;
+    }
+
+    #experiencia {
+        margin-top: 300px;
+    }
+
+    .projeto {
+        grid-template-columns: 1fr;
+        margin-left: -50px;
+        gap: 50px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: -50px;
+    }
+
+}
