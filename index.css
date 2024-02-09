@@ -12,7 +12,6 @@ html {
 body {
   color: #c2c1c1;
   background-color: #111;
-  max-width: max-content;
 }
 
 header {
@@ -38,7 +37,7 @@ header nav a {
 
 #inicio {
   display: flex;
-  width: 100vw;
+  width: 100%;
   height: 80vh;
   align-items: center;
   justify-content: center;
@@ -134,7 +133,7 @@ h2 {
 .projeto {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 10%;
   margin-bottom: 5rem;
 }

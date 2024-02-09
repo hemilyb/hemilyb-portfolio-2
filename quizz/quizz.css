@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  font-size: 1rem;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+
+.error label {
+  color: #f64348;
+}
+
+.correct label {
+  color: #23bf00;
+}
+
+hr {
+  border-style: dotted;
+  color: #363739;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: 1px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+h1,
+h2 {
+  color: #c1c1c1;
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.questions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input + label {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  padding: 8px;
+  color: #c1c1c1;
+}
+
+input {
+  position: absolute;
+  opacity: 0;
+}
+
+input + label::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #363739;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+input:checked + label::before {
+  content: "✔";
+  color: #f64348;
+  font-size: 15px;
+  padding-left: 2px;
+  background-color: #0a0a0a;
+}
+
+input + label:hover {
+  color: #f64348;
+}
+
+.questions button {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  letter-spacing: 1px;
+  background-color: #f64147;
+  color: #ffffff;
+  padding: 1rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.message {
+  font-size: 0.8rem;
+  color: #868686;
+  text-align: center;
+}
+
+.result {
+  border-radius: 8px;
+  border: 1px solid #363739;
+  background: #1e1e1e;
+  padding: 1rem 3rem 4rem;
+  line-height: 2rem;
+}
+
+.finale {
+  margin-top: 1.2rem;
+  padding: 1rem;
+}
