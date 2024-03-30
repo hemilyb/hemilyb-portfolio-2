@@ -218,6 +218,14 @@ canvas {
     display: inline-block;
     width: 25rem;
   }
+
+  .link-popup {
+    width: 20rem;
+  }
+
+  #contact {
+    font-size: 5rem;
+  }
 }
 
 @media screen and (min-width:50rem) {
