@@ -220,12 +220,12 @@ canvas {
   }
 
   .dropdown-btn {
-    padding: 4rem;
+    padding: 0.5rem;
   }
 
   .dropdown-list {
-    top: 0;
-    margin-left: 10rem;
+    top: 1rem;
+    margin-left: 1rem;
   }
 
   .popup-content {
