@@ -29,13 +29,36 @@
             Início
           </a>
         </li>
-
-        <li class="dropdown-list-item">
-          <a href="#contact">
-            <i class="ph ph-user-check"></i>
-            Contato
-          </a>
-        </li>
+        <div class="popup">
+          <li class="dropdown-list-item">
+            <a href="#contact">
+              <i class="ph ph-user-check"></i>
+              Contato
+            </a>
+          </li>
+          <div class="popup-content keyboard hidden">
+            <img src="img/keyboard.png" alt="imagem-projeto-weather" class="img-popup" />
+            <div class="text-popup">
+              <h4>Contato</h4>
+              <p>Entre em contato comigo a qualquer momento, através das redes sociais ou e-mail!</p>
+              <div class="links">
+                <div class="link">
+                  <i class="ph ph-linkedin-logo"></i>
+                  <a href="www.linkedin.com/in/hemilyb">https://linkedin.com/in/hemilyb</a>
+                </div>
+                <div class="link">
+                  <i class="ph ph-instagram-logo"></i>
+                  <a href="https://www.instagram.com/itshemyy/">instagram.com/itshemyy/</a>
+                </div>
+                <div class="link">
+                  <i class="ph ph-envelope"></i>
+                  <a href="mailto:hemilyoliveira02@gmail.com">hemilyoliveira02@gmail.com</a>
+                </div>
+              </div>
+              <button type="button" class="close-popup hidden">X</button>
+            </div>
+          </div>
+        </div>
 
         <li class="dropdown-list-item">
           <a href="#projects">
@@ -50,17 +73,6 @@
 
   <main>
     <section id="home" class="flex flex-col gap-2">
-      <div class="keyboard w-screen h-[60dvh]">
-        <canvas id="canvas3dKeyboard"></canvas>
-        <a class="logo" href="https://spline.design"></a>
-        <script type="module">
-          import { Application } from './spline-keyboard/runtime.js';
-          const canvasKeyboard = document.getElementById('canvas3dKeyboard');
-          const appKeyboard = new Application(canvasKeyboard);
-          appKeyboard.load('./spline-keyboard/scene.splinecode');
-        </script>
-      </div>
-
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:px-56 xl:gap-24">
         <div class="flex justify-center items-center h-[60dvh]">
@@ -68,14 +80,17 @@
           <a class="logo" href="https://spline.design"></a>
           <script type="module">
             import { Application } from './spline-girl/runtime.js';
-            const canvasGirl = document.getElementById('canvas3dGirl');
-            const appGirl = new Application(canvasGirl);
-            appGirl.load('./spline-girl/scene.splinecode');
+            async function loadScene() {
+              const canvasGirl = document.getElementById('canvas3dGirl');
+              const appGirl = new Application(canvasGirl);
+              await appGirl.load('./spline-girl/scene.splinecode');
+            }
+            loadScene();
           </script>
         </div>
 
 
-        <div id="contact" class="font-mono text-white px-4 p-8 flex flex-col justify-center">
+        <div class="font-mono text-white px-4 p-8 flex flex-col justify-center">
 
           <h1 class="text-3xl font-semibold">Oie!👋 Meu nome é Hemily.</h1>
           <p class="text-xl py-4">Futura Desenvolvedora Front-end.</p>
@@ -159,8 +174,7 @@
             <img src="img/calculator-popup.jpg" alt="calculator-content">
             <div class="text-popup">
               <h4>Calculadora</h4>
-              <p>Exercício prático desenvolvido ao final do módulo DOM JS da
-                OneBitCode.</p>
+              <p>Desenvolvido em JavaScript, esse projeto foi realizado em um exercício prático envolvendo o uso do DOM.</p>
               <div class="link-popup font-mono pt-8">
                 <a href="calculadora/calc.html">ver projeto</a>
                 <a href="https://github.com/hemilyb/CalculatorJS">repositório</a>
@@ -179,7 +193,7 @@
             <img src="img/jazzschool-popup.jpg" alt="jazz-school-content">
             <div class="text-popup">
               <h4>Tom's Jazz School</h4>
-              <p>Uma landing page realizada no início dos meus estudos, treinando e reforçando os conteúdos de HTML e CSS.</p>
+              <p>Uma landing page de uma página de cursos.</p>
               <div class="link-popup font-mono pt-8">
                 <a href="jazz-school/index.html">ver projeto</a>
                 <a href="https://github.com/hemilyb/Jazz-School">repositório</a>
@@ -198,7 +212,7 @@
             <img src="img/slayer-popup.jpg" alt="slayer-content">
             <div class="text-popup">
               <h4>Demon Slayer</h4>
-              <p>Web page contendo alguns personagens do anime, feita durante um evento para por em prática conhecimentos básicos.</p>
+              <p>Web page contendo os principais personagens do anime, com suas informações e imagens.</p>
               <div class="link-popup font-mono pt-8">
                 <a href="demonslayer/index.html">ver projeto</a>
                 <a href="https://github.com/hemilyb/DemonSlayer">repositório</a>
@@ -247,4 +261,5 @@
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <script src="https://cdn.tailwindcss.com"></script>
 </body>
+
 </html>

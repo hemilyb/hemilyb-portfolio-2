@@ -37,14 +37,8 @@ canvas {
 .dropdown-btn {
   position: absolute;
   top: 19px;
-  right: 18px;
-  width: 37px;
-  height: 37px;
-  padding: 4rem;
-  position: absolute;
-  margin-right: 4rem;
+  margin-left: 1rem;
   cursor: pointer;
-
 }
 
 .ph-list:hover {
@@ -54,13 +48,11 @@ canvas {
 
 .dropdown-list {
   position: absolute;
-  top: 68px;
   width: 220px;
-  right: 0;
   background-color: var(--primary-color);
   border-radius: 10px;
-  float: right;
-  margin-right: 10rem;
+  margin-left: 10rem;
+  margin-top: 5rem;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
@@ -120,6 +112,28 @@ canvas {
   display: flex;
   z-index: 9999;
   width: 75rem;
+}
+
+.keyboard img {
+  border: none;
+}
+
+.popup-content.keyboard {
+  background-color: var(--background-color);
+}
+
+.link i {
+  font-size: 1.5rem;
+}
+
+.link:hover {
+  color: var(--white);
+  transition: background-color 0.5s ease;
+  text-decoration: underline wavy;
+}
+
+.link {
+  padding-top: 1rem;
 }
 
 .popup-content.hidden {
@@ -201,21 +215,17 @@ canvas {
 }
 
 @media screen and (max-width:48rem) {
-   .keyboard {
-    width: 550px;
-  }
-
   .ph-list {
     font-size: 2.5rem;
   }
 
   .dropdown-btn {
-    padding: 2rem;
+    padding: 4rem;
   }
 
   .dropdown-list {
-    width: 200px;
-    margin-right: 7.5rem;
+    top: 0;
+    margin-left: 10rem;
   }
 
   .popup-content {
@@ -227,15 +237,20 @@ canvas {
     display: inline-block;
     margin: 0.4rem;
   }
-
-  #contact {
-    font-size: 5rem;
-  }
 }
 
-@media screen and (min-width:50rem) {
+@media screen and (min-width:48rem) {
   .popup-content {
     display: inline-block;
     width: 40rem;
+  }
+
+  .dropdown-btn {
+    padding: 2rem;
+  }
+
+  .dropdown-list {
+    width: 200px;
+    margin-right: 7.5rem;
   }
 }
