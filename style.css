@@ -231,11 +231,11 @@ canvas {
 
   .popup-content {
     display: inline-block;
-    width: 25rem;
+    width: 24rem;
   }
 
   .popup-content.keyboard {
-    width: 30rem;
+    width: 28rem;
   }
 
   .link-popup a {
