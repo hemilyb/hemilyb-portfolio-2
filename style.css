@@ -91,7 +91,6 @@ canvas {
 
 .popup {
   position: relative;
-  display: inline-block;
 }
 
 .popup.active {
@@ -100,12 +99,12 @@ canvas {
 }
 
 .popup-content {
+  position: fixed;
   background-color: white;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -119,6 +118,8 @@ canvas {
 }
 
 .popup-content.keyboard {
+  display: inline-block;
+  width: 45rem;
   background-color: var(--background-color);
 }
 
@@ -233,16 +234,20 @@ canvas {
     width: 25rem;
   }
 
+  .popup-content.keyboard {
+    width: 30rem;
+  }
+
   .link-popup a {
     display: inline-block;
     margin: 0.4rem;
   }
 }
 
-@media screen and (min-width:48rem) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .popup-content {
     display: inline-block;
-    width: 40rem;
+    width: 20rem;
   }
 
   .dropdown-btn {
