@@ -36,7 +36,7 @@ canvas {
 
 .dropdown-btn {
   position: absolute;
-  top: 19px;
+  padding: 2rem;
   margin-left: 1rem;
   cursor: pointer;
 }
@@ -215,13 +215,9 @@ canvas {
   font-size: 1rem;
 }
 
-@media screen and (max-width:48rem) {
+@media screen and (max-width: 767px) {
   .ph-list {
     font-size: 2.5rem;
-  }
-
-  .dropdown-btn {
-    padding: 0.5rem;
   }
 
   .dropdown-list {
@@ -231,11 +227,12 @@ canvas {
 
   .popup-content {
     display: inline-block;
-    width: 24rem;
+    width: 25rem;
   }
 
   .popup-content.keyboard {
-    width: 28rem;
+    width: 25rem;
+    padding: 0;
   }
 
   .link-popup a {
@@ -244,18 +241,9 @@ canvas {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .popup-content {
     display: inline-block;
-    width: 20rem;
-  }
-
-  .dropdown-btn {
-    padding: 2rem;
-  }
-
-  .dropdown-list {
-    width: 200px;
-    margin-right: 7.5rem;
+    width: 35rem;
   }
 }
