@@ -228,6 +228,7 @@ canvas {
   .popup-content {
     display: inline-block;
     width: 22rem;
+    padding: 0.75rem;
   }
 
   .popup-content.keyboard {
@@ -239,9 +240,13 @@ canvas {
     font-size: 1rem;
   }
 
+  .link-popup {
+    display: flex;
+  }
+
   .link-popup a {
-    display: inline-block;
-    margin: 0.4rem;
+    margin-left: 0.5rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
   }
 }
 
