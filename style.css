@@ -227,12 +227,16 @@ canvas {
 
   .popup-content {
     display: inline-block;
-    width: 25rem;
+    width: 22rem;
   }
 
   .popup-content.keyboard {
-    width: 25rem;
+    width: 22rem;
     padding: 0;
+  }
+
+  .text-popup {
+    font-size: 1rem;
   }
 
   .link-popup a {
