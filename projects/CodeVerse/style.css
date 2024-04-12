@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brand-color: #9778f5;
+  --dark-10: #121214;
+  --dark-20: #17171a;
+  --dark-30: #202024;
+  --dark-40: #252529;
+  --dark-50: #afabb6;
+  --dark-60: #ffffff;
+}
+body {
+  background-color: var(--dark-10);
+}
+
+h1 {
+  color: var(--dark-60);
+  font-size: 2.5rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+span {
+  color: var(--brand-color);
+}
+
+header {
+  background-color: var(--dark-20);
+  padding: 64px 0px 52px 0px;
+  text-align: center;
+}
+
+.header {
+  position: relative;
+}
+
+.input-header {
+  margin-top: 2rem;
+}
+
+.input-header input {
+  background-color: var(--dark-30);
+  width: 76rem;
+  padding: 16px 24px 16px 45px;
+  border: 2px;
+  border-radius: 8px;
+  color: var(--dark-60);
+}
+
+::placeholder {
+  color: var(--dark-50);
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+.ph-magnifying-glass {
+  position: absolute;
+  color: var(--brand-color);
+  font-size: 1.5rem;
+  padding: 0.75rem;
+}
+
+.cards {
+  align-items: center;
+  margin: auto;
+  width: 800px;
+  padding-top: 3rem;
+}
+
+.container {
+  border: 2px solid var(--dark-40);
+  margin-bottom: 1.75rem;
+  padding: 2.5rem;
+  border-radius: 8px;
+}
+
+ul:has(li:hover) li:not(:hover) {
+  opacity: 0.6;
+  scale: 0.98;
+}
+
+.container:hover {
+  border: 2px solid var(--brand-color);
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in;
+}
+
+.date {
+  display: flex;
+  position: relative;
+  color: var(--brand-color);
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding-bottom: 1.25rem;
+}
+
+.date i {
+  position: absolute;
+  right: 0;
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  color: var(--dark-60);
+  font-size: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.content-text p {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: var(--dark-50);
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 482px) and (max-width: 767px) {
+    .cards {
+        width: 400px;
+    }
+    .input-header input {
+        width: 26rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .cards {
+        width: 700px;
+    }
+
+    .input-header input {
+        width: 46rem;
+    }
+}
