@@ -122,12 +122,12 @@ h2 {
   font-size: 1rem;
 }
 
-@media screen and (min-width: 482px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .cards {
-        width: 400px;
+        width: 350px;
     }
     .input-header input {
-        width: 26rem;
+        width: 22rem;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
