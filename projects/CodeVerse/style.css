@@ -123,7 +123,9 @@ h2 {
     .cards {
         width: 350px;
     }
-    header,
+    header {
+      width: auto;
+    }
     .input-header input {
         width: 22rem;
     }
@@ -131,6 +133,10 @@ h2 {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .cards {
         width: 700px;
+    }
+
+    header {
+      width: auto;
     }
 
     .input-header input {
