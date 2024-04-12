@@ -29,13 +29,10 @@ span {
 }
 
 header {
+  position: relative;
   background-color: var(--dark-20);
   padding: 64px 0px 52px 0px;
   text-align: center;
-}
-
-.header {
-  position: relative;
 }
 
 .input-header {
@@ -126,6 +123,7 @@ h2 {
     .cards {
         width: 350px;
     }
+    header,
     .input-header input {
         width: 22rem;
     }
